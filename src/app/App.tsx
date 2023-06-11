@@ -1,10 +1,9 @@
 import { FC, Suspense } from "react";
 import "./styles/index.scss";
-import { Link, Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useTheme } from "./providers/ThemeProvider";
-import { MainPage } from "pages/main";
-import { AboutPage } from "pages/about";
 import { classNames } from "shared/lib/classNames";
+import { AppRouter } from "./providers/router";
 
 export const App: FC = () => {
   const { theme, toggleTheme } = useTheme();
@@ -17,12 +16,7 @@ export const App: FC = () => {
         Main
       </Link>
       <Link to="/about">About</Link>
-      <Suspense fallback={<h1>Загрузка...</h1>}>
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/about" element={<AboutPage />} />
-        </Routes>
-      </Suspense>
+      <AppRouter />
     </div>
   );
 };
