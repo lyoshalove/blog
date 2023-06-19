@@ -16,7 +16,7 @@ export const PageError: FC<PageErrorProps> = ({ className }) => {
 
   return (
     <div className={classNames(styles.PageError, {}, [className])}>
-      <p>{t('OccuredError')}</p>
+      <h2 style={{ marginBottom: 20 }}>{t('OccuredError')}</h2>
       <Button onClick={reloadPage}>{t('ReloadPage')}</Button>
     </div>
   );

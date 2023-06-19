@@ -5,5 +5,7 @@
   "About": "About",
   "Language": "English",
   "Toggle": "Toggle",
-  "Page not found": "Page not found"
+  "OccuredError": "Произошла непредвиденная ошибка",
+  "Page not found": "Page not found",
+  "ReloadPage": "Перезагрузить страницу"
 }
