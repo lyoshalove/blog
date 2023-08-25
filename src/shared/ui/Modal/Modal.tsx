@@ -9,6 +9,7 @@ import {
   useState,
 } from "react";
 import { Portal } from "../Portal";
+import { useTheme } from "app/providers/ThemeProvider";
 
 interface ModalProps extends PropsWithChildren<unknown> {
   className?: string;
@@ -36,7 +37,6 @@ export const Modal = ({
     setIsClosing(true);
     timerRef.current = setTimeout(() => {
       onClose?.();
-      console.log("SNUS");
       setIsClosing(false);
     }, ANIMATION_DELAY);
   }, [onClose]);

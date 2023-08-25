@@ -3,11 +3,8 @@ import { classNames } from "shared/lib/classNames";
 import { Navbar } from "widgets/Navbar";
 import { Sidebar } from "widgets/Sidebar";
 import { AppRouter } from "./providers/router";
-import { useTheme } from "./providers/ThemeProvider";
 
 export const App: FC = () => {
-  const { theme } = useTheme();
-
   useEffect(() => {
     if (Math.random() < 0.5) {
       throw new Error("SNUS");
@@ -15,7 +12,7 @@ export const App: FC = () => {
   }, []);
 
   return (
-    <div className={classNames("app", {}, [theme])}>
+    <div className={classNames("app")}>
       <Suspense fallback="Loading...">
         <Navbar />
         <div className="content">
