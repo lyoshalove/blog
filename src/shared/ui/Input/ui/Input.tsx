@@ -65,6 +65,7 @@ export const Input = memo(
         )}
         <div className={styles.caretWrapper}>
           <input
+            ref={inputRef}
             className={styles.input}
             type={type}
             value={value}
@@ -75,10 +76,10 @@ export const Input = memo(
             {...props}
           />
           {isFocused && (
-            <span
+            <div
               className={styles.caret}
               style={{ left: `${caretPosition * 9}px` }}
-            ></span>
+            />
           )}
         </div>
       </div>
