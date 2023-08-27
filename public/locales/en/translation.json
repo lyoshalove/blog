@@ -8,5 +8,14 @@
   "Toggle": "Toggle",
   "OccuredError": "Произошла непредвиденная ошибка",
   "Page not found": "Page not found",
-  "ReloadPage": "Перезагрузить страницу"
+  "ReloadPage": "Перезагрузить страницу",
+  "Login": "Login",
+  "auth": {
+    "username": {
+      "placeholder": "Username"
+    },
+    "password": {
+      "placeholder": "Password"
+    }
+  }
 }

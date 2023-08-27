@@ -7,6 +7,15 @@
   "ShortLanguage": "Ру",
   "Toggle": "Переключить",
   "OccuredError": "Произошла непредвиденная ошибка",
-  "Page not found": "Page not found",
-  "ReloadPage": "Перезагрузить страницу"
+  "Page not found": "Страница не найдена",
+  "ReloadPage": "Перезагрузить страницу",
+  "Login": "Войти",
+  "auth": {
+    "username": {
+      "placeholder": "Имя"
+    },
+    "password": {
+      "placeholder": "Пароль"
+    }
+  }
 }

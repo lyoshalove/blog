@@ -2,11 +2,20 @@
   "About": "",
   "About page": "",
   "Language": "",
+  "Login": "Login",
   "Main": "",
   "Main page": "",
   "OccuredError": "Unexpected error has occurred",
   "Page not found": "Page not found",
   "ReloadPage": "Reload page",
   "SignIn": "SignIn",
-  "Toggle": "Toggle"
+  "Toggle": "Toggle",
+  "auth": {
+    "password": {
+      "placeholder": "placeholder"
+    },
+    "username": {
+      "placeholder": "placeholder"
+    }
+  }
 }

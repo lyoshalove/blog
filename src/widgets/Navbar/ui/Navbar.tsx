@@ -6,7 +6,7 @@ import styles from "./Navbar.module.scss";
 import { RoutePath } from "shared/config/routeConfig";
 import { Button, ButtonTheme } from "shared/ui/Button";
 import { Portal } from "shared/ui/Portal";
-import { Modal } from "shared/ui/Modal";
+import { LoginModal } from "features/AuthByUserName";
 
 interface NavbarProps {
   className?: string;
@@ -27,15 +27,12 @@ export const Navbar: FC<NavbarProps> = ({ className }) => {
         <AppLink to={RoutePath.Main} theme={AppLinkTheme.SECONDARY}>
           {t("Main")}
         </AppLink>
-        <Button theme={ButtonTheme.CLEAR_INVERTED} onClick={toggleAuthModal}>{t("SignIn")}</Button>
+        <Button theme={ButtonTheme.CLEAR_INVERTED} onClick={toggleAuthModal}>
+          {t("Login")}
+        </Button>
       </div>
       <Portal>
-        <Modal isOpened={isAuthModal} onClose={toggleAuthModal}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-          maiores! Harum ipsa hic amet voluptatum ea voluptate sit soluta enim
-          neque, deserunt tenetur. Aperiam neque maiores quos ut harum
-          excepturi?
-        </Modal>
+        <LoginModal isOpened={isAuthModal} onClose={toggleAuthModal}  />
       </Portal>
     </div>
   );

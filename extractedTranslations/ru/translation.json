@@ -2,11 +2,20 @@
   "About": "About",
   "About page": "About page",
   "Language": "Language",
+  "Login": "Login",
   "Main": "Main",
   "Main page": "Main page",
   "OccuredError": "Произошла непредвиденная ошибка",
   "Page not found": "Page not found",
   "ReloadPage": "Перезагрузить страницу",
   "SignIn": "SignIn",
-  "Toggle": "Toggle"
+  "Toggle": "Toggle",
+  "auth": {
+    "password": {
+      "placeholder": "placeholder"
+    },
+    "username": {
+      "placeholder": "placeholder"
+    }
+  }
 }
