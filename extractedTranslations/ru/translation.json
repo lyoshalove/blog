@@ -17,5 +17,10 @@
     "username": {
       "placeholder": "placeholder"
     }
-  }
+  },
+  "count_0": "count_0",
+  "count_1": "count_1",
+  "count_2": "count_2",
+  "decrement": "decrement",
+  "increment": "increment"
 }

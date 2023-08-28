@@ -1,13 +1,13 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from '@storybook/react';
 
-import { ThemeDecorator } from "shared/config/storybook/decorators";
-import { Theme } from "app/providers/ThemeProvider";
-import { Input } from "./Input";
+import { ThemeDecorator } from 'shared/config/storybook/decorators';
+import { Theme } from 'app/providers/ThemeProvider';
+import { Input } from './Input';
 
 const meta = {
-  title: "shared/Input",
+  title: 'shared/Input',
   component: Input,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 } satisfies Meta<typeof Input>;
 
 export default meta;
@@ -15,7 +15,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    placeholder: "Text",
-    value: "SNUS",
+    placeholder: 'Text',
+    value: 'SNUS',
   },
 };

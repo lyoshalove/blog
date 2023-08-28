@@ -17,5 +17,9 @@
     "username": {
       "placeholder": "placeholder"
     }
-  }
+  },
+  "count": "count",
+  "count_plural": "count_plural",
+  "decrement": "decrement",
+  "increment": "increment"
 }

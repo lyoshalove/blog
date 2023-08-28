@@ -6,9 +6,9 @@
   "Language": "English",
   "ShortLanguage": "En",
   "Toggle": "Toggle",
-  "OccuredError": "Произошла непредвиденная ошибка",
+  "OccuredError": "Occured error",
   "Page not found": "Page not found",
-  "ReloadPage": "Перезагрузить страницу",
+  "ReloadPage": "Reload Page",
   "Login": "Login",
   "auth": {
     "username": {
@@ -17,5 +17,7 @@
     "password": {
       "placeholder": "Password"
     }
-  }
+  },
+  "increment": "Increment",
+  "decrement": "Decrement"
 }

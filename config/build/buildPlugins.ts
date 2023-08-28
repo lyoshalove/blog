@@ -29,7 +29,7 @@ export const buildPlugins = ({
     plugins.push(
       new BundleAnalyzerPlugin({
         openAnalyzer: false,
-      })
+      }),
     );
   }
 

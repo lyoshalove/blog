@@ -1,5 +1,4 @@
-import { classNames } from "shared/lib/classNames";
-import styles from "./styles.module.scss";
+import { classNames } from 'shared/lib/classNames';
 import {
   MouseEvent,
   PropsWithChildren,
@@ -7,9 +6,9 @@ import {
   useEffect,
   useRef,
   useState,
-} from "react";
-import { Portal } from "../Portal";
-import { useTheme } from "app/providers/ThemeProvider";
+} from 'react';
+import styles from './styles.module.scss';
+import { Portal } from '../Portal';
 
 interface ModalProps extends PropsWithChildren<unknown> {
   className?: string;
@@ -50,19 +49,19 @@ export const Modal = ({
 
   const onKeyDown = useCallback(
     (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
+      if (event.key === 'Escape') {
         closeHandler();
       }
     },
-    [closeHandler]
+    [closeHandler],
   );
 
   useEffect(() => {
-    window.addEventListener("keydown", onKeyDown);
+    window.addEventListener('keydown', onKeyDown);
 
     return () => {
       clearTimeout(timerRef.current);
-      window.removeEventListener("keydown", onKeyDown);
+      window.removeEventListener('keydown', onKeyDown);
     };
   }, [isOpened, onKeyDown]);
 

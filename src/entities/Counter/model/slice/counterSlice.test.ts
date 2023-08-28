@@ -1,8 +1,8 @@
-import { CounterSchema } from "../types/counterSchema";
-import { counterActions, counterReducer } from "./CounterSlice";
+import { CounterSchema } from '../types/counterSchema';
+import { counterActions, counterReducer } from './CounterSlice';
 
-describe("counterSlice", () => {
-  test("increment", () => {
+describe('counterSlice', () => {
+  test('increment', () => {
     const state: CounterSchema = {
       value: 10,
     };
@@ -12,7 +12,7 @@ describe("counterSlice", () => {
     });
   });
 
-  test("decrement", () => {
+  test('decrement', () => {
     const state: CounterSchema = {
       value: 10,
     };
@@ -22,7 +22,7 @@ describe("counterSlice", () => {
     });
   });
 
-  test("should work with empty state", () => {
+  test('should work with empty state', () => {
     expect(counterReducer(undefined, counterActions.increment)).toEqual({
       value: 1,
     });
