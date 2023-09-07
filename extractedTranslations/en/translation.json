@@ -1,8 +1,10 @@
 {
   "About": "",
   "About page": "",
+  "AuthForm": "",
   "Language": "",
   "Login": "Login",
+  "Logout": "",
   "Main": "",
   "Main page": "",
   "OccuredError": "Unexpected error has occurred",
@@ -21,5 +23,8 @@
   "count": "count",
   "count_plural": "count_plural",
   "decrement": "decrement",
+  "errors": {
+    "BadEmailOrPassword": ""
+  },
   "increment": "increment"
 }

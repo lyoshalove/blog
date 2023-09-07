@@ -19,5 +19,10 @@
     }
   },
   "increment": "Увеличить",
-  "decrement": "Уменьшить"
+  "decrement": "Уменьшить",
+  "AuthForm": "Форма авторизации",
+  "Logout": "Выйти",
+  "errors": {
+    "BadEmailOrPassword": "Вы ввели неверный логин и/или пароль"
+  }
 }

@@ -1,8 +1,10 @@
 {
   "About": "About",
   "About page": "About page",
+  "AuthForm": "AuthForm",
   "Language": "Language",
   "Login": "Login",
+  "Logout": "Logout",
   "Main": "Main",
   "Main page": "Main page",
   "OccuredError": "Произошла непредвиденная ошибка",
@@ -22,5 +24,8 @@
   "count_1": "count_1",
   "count_2": "count_2",
   "decrement": "decrement",
+  "errors": {
+    "BadEmailOrPassword": "BadEmailOrPassword"
+  },
   "increment": "increment"
 }

@@ -19,5 +19,10 @@
     }
   },
   "increment": "Increment",
-  "decrement": "Decrement"
+  "decrement": "Decrement",
+  "AuthForm": "Auth form",
+  "Logout": "Logout",
+  "errors": {
+    "BadEmailOrPassword": "You send wrong email and/or password"
+  }
 }
