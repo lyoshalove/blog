@@ -1,12 +1,30 @@
 {
   "About": "",
   "About page": "",
+  "AuthForm": "",
   "Language": "",
+  "Login": "Login",
+  "Logout": "",
   "Main": "",
   "Main page": "",
   "OccuredError": "Unexpected error has occurred",
   "Page not found": "Page not found",
   "ReloadPage": "Reload page",
   "SignIn": "SignIn",
-  "Toggle": "Toggle"
+  "Toggle": "Toggle",
+  "auth": {
+    "password": {
+      "placeholder": "placeholder"
+    },
+    "username": {
+      "placeholder": "placeholder"
+    }
+  },
+  "count": "count",
+  "count_plural": "count_plural",
+  "decrement": "decrement",
+  "errors": {
+    "BadEmailOrPassword": ""
+  },
+  "increment": "increment"
 }

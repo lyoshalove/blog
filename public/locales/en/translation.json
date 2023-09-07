@@ -6,7 +6,23 @@
   "Language": "English",
   "ShortLanguage": "En",
   "Toggle": "Toggle",
-  "OccuredError": "Произошла непредвиденная ошибка",
+  "OccuredError": "Occured error",
   "Page not found": "Page not found",
-  "ReloadPage": "Перезагрузить страницу"
+  "ReloadPage": "Reload Page",
+  "Login": "Login",
+  "auth": {
+    "username": {
+      "placeholder": "Username"
+    },
+    "password": {
+      "placeholder": "Password"
+    }
+  },
+  "increment": "Increment",
+  "decrement": "Decrement",
+  "AuthForm": "Auth form",
+  "Logout": "Logout",
+  "errors": {
+    "BadEmailOrPassword": "You send wrong email and/or password"
+  }
 }

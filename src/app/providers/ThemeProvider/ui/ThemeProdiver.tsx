@@ -1,5 +1,5 @@
-import { FC, useMemo, useState } from "react";
-import { Theme, ThemeContext } from "../lib/ThemeContext";
+import { FC, useMemo, useState } from 'react';
+import { Theme, ThemeContext } from '../lib/ThemeContext';
 
 interface ThemeProviderProps {
   initialTheme?: Theme;
@@ -16,7 +16,7 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({
       theme,
       setTheme,
     }),
-    [theme]
+    [theme],
   );
 
   return (

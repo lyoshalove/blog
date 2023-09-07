@@ -1,21 +1,20 @@
-import { FC, Suspense, useEffect } from "react";
-import { classNames } from "shared/lib/classNames";
-import { Navbar } from "widgets/Navbar";
-import { Sidebar } from "widgets/Sidebar";
-import { AppRouter } from "./providers/router";
-import { useTheme } from "./providers/ThemeProvider";
+import { FC, Suspense, useEffect } from 'react';
+import { classNames } from 'shared/lib/classNames';
+import { Navbar } from 'widgets/Navbar';
+import { Sidebar } from 'widgets/Sidebar';
+import { useDispatch } from 'react-redux';
+import { userActions } from 'entities/User';
+import { AppRouter } from './providers/router';
 
 export const App: FC = () => {
-  const { theme } = useTheme();
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    if (Math.random() < 0.5) {
-      throw new Error("SNUS");
-    }
-  }, []);
+    dispatch(userActions.initAuthData());
+  }, [dispatch]);
 
   return (
-    <div className={classNames("app", {}, [theme])}>
+    <div className={classNames('app')}>
       <Suspense fallback="Loading...">
         <Navbar />
         <div className="content">

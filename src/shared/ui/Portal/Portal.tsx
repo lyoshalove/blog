@@ -1,5 +1,5 @@
-import { PropsWithChildren } from "react";
-import { createPortal } from "react-dom";
+import { PropsWithChildren } from 'react';
+import { createPortal } from 'react-dom';
 
 interface PortalProps extends PropsWithChildren<unknown> {
   element?: HTMLElement;
