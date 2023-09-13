@@ -1,11 +1,13 @@
-import { FC, useMemo, useState } from 'react';
+import {
+  FC, PropsWithChildren, useMemo, useState,
+} from 'react';
 import { Theme, ThemeContext } from '../lib/ThemeContext';
 
 interface ThemeProviderProps {
   initialTheme?: Theme;
 }
 
-export const ThemeProvider: FC<ThemeProviderProps> = ({
+export const ThemeProvider: FC<PropsWithChildren<ThemeProviderProps>> = ({
   children,
   initialTheme,
 }) => {

@@ -1,4 +1,4 @@
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { StoreProvider } from 'app/providers/StoreProvider';
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'app/providers/ThemeProvider';
@@ -8,7 +8,9 @@ import 'app/styles/index.scss';
 
 import 'shared/config/i18n/i18n';
 
-render(
+const root = createRoot(document.getElementById('root'));
+
+root.render(
   <StoreProvider>
     <BrowserRouter>
       <ErrorBoundary>
@@ -18,5 +20,4 @@ render(
       </ErrorBoundary>
     </BrowserRouter>
   </StoreProvider>,
-  document.getElementById('root'),
 );
