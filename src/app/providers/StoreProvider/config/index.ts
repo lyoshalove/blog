@@ -1,2 +1,2 @@
 export { createReduxStore } from './store';
-export { StateSchema } from './StateSchema';
+export { StateSchema, ReduxStoreWithManager } from './StateSchema';
