@@ -1,22 +1,18 @@
-import { FC, useState } from 'react';
+import { memo, useState } from 'react';
 import { classNames } from 'shared/lib/classNames';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
 import { LangSwitcher } from 'widgets/LangSwitcher';
-import { useTranslation } from 'react-i18next';
 import { Button, ButtonTheme } from 'shared/ui/Button';
 import { ButtonSize } from 'shared/ui/Button/ui/Button';
-import { AppLink, AppLinkTheme } from 'shared/ui/AppLink';
-import { RoutePath } from 'shared/config/routeConfig';
-import HomeIcon from 'shared/assets/icons/home.svg';
-import AboutIcon from 'shared/assets/icons/about.svg';
+import { SidebarItemsList } from 'widgets/Sidebar/model/items';
 import styles from './Sidebar.module.scss';
+import { SidebarItem } from '../sidebar-item/sidebar-item';
 
 interface SidebarProps {
   className?: string;
 }
 
-export const Sidebar: FC<SidebarProps> = ({ className }) => {
-  const { t } = useTranslation();
+export const Sidebar = memo(({ className }: SidebarProps) => {
   const [isOpened, setIsOpened] = useState(false);
 
   const toggleOpenSidebar = () => {
@@ -35,27 +31,9 @@ export const Sidebar: FC<SidebarProps> = ({ className }) => {
       )}
     >
       <div className={styles.links}>
-        <div>
-          <AppLink
-            to={RoutePath.Main}
-            theme={AppLinkTheme.SECONDARY}
-            className={styles.linksItem}
-          >
-            <HomeIcon />
-            <span className={styles.linkText}>{t('Main')}</span>
-          </AppLink>
-        </div>
-
-        <div>
-          <AppLink
-            to={RoutePath.About}
-            theme={AppLinkTheme.SECONDARY}
-            className={styles.linksItem}
-          >
-            <AboutIcon />
-            <span className={styles.linkText}>{t('About')}</span>
-          </AppLink>
-        </div>
+        {SidebarItemsList.map((sidebarItem) => {
+          return <SidebarItem key={sidebarItem.path} item={sidebarItem} opened={isOpened} />;
+        })}
       </div>
       <Button
         onClick={toggleOpenSidebar}
@@ -73,4 +51,4 @@ export const Sidebar: FC<SidebarProps> = ({ className }) => {
       </div>
     </div>
   );
-};
+});

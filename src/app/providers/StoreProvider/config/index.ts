@@ -1,2 +1,2 @@
-export { createReduxStore } from './store';
+export { createReduxStore, type AppDispatch } from './store';
 export { StateSchema, ReduxStoreWithManager } from './StateSchema';
