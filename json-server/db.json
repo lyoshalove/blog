@@ -10,5 +10,15 @@
       "username": "admin",
       "password": "123"
     }
-  ]
+  ],
+  "profile": {
+    "firstname": "Alex",
+    "lastname": "Snus",
+    "age": 19,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Moscow",
+    "username": "admin",
+    "avatar": "https://media.discordapp.net/attachments/1123128165146042369/1149617910248132618/d3CHSe-sKbI.png?width=748&height=936"
+  }
 }

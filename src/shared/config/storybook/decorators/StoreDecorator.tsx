@@ -3,9 +3,11 @@ import { StoryFn } from '@storybook/react';
 import { StoreProvider } from 'app/providers/StoreProvider';
 import { StateSchema } from 'app/providers/StoreProvider/config';
 import { loginReducer } from 'features/AuthByUserName';
+import { profileReducer } from '../../../../entities/profile';
 
 const defaultAsyncReducers: DeepPartial<ReducersMapObject<StateSchema>> = {
   login: loginReducer,
+  profile: profileReducer,
 };
 
 export const StoreDecorator = (

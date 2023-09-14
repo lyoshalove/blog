@@ -2,7 +2,7 @@ import { classNames } from 'shared/lib/classNames';
 import { useTranslation } from 'react-i18next';
 import { Button, ButtonTheme } from 'shared/ui/Button';
 import { Input } from 'shared/ui/Input';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { memo, useCallback } from 'react';
 import { Text } from 'shared/ui/Text';
 import { TextTheme } from 'shared/ui/Text/Text';
@@ -12,21 +12,23 @@ import {
 } from 'features/AuthByUserName/model/selectors';
 import { DynamicModuleLoader } from 'shared/lib/components';
 import { ReducersList } from 'shared/lib/components/dynamic-module-loader';
+import { useAppDispatch } from 'shared/lib/hooks';
 import { loginByUsername } from '../../model/services/login-by-username/login-by-username';
 import { loginActions, loginReducer } from '../../model/slice/login-slice';
 import styles from './styles.module.scss';
 
 export interface LoginFormProps {
   className?: string;
+  onSuccess: () => void
 }
 
 const initialReducers: ReducersList = {
   login: loginReducer,
 };
 
-const LoginForm = memo(({ className }: LoginFormProps) => {
+const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
   const { t } = useTranslation();
-  const dispatch = useDispatch<any>();
+  const dispatch = useAppDispatch();
   const username = useSelector(getLoginUsername);
   const password = useSelector(getLoginPassword);
   const isLoading = useSelector(getLoginLoading);
@@ -46,14 +48,18 @@ const LoginForm = memo(({ className }: LoginFormProps) => {
     [dispatch],
   );
 
-  const onLogin = useCallback(() => {
-    dispatch(
+  const onLogin = useCallback(async () => {
+    const result = await dispatch(
       loginByUsername({
         username,
         password,
       }),
     );
-  }, [dispatch, password, username]);
+
+    if (result.meta.requestStatus === 'fulfilled') {
+      onSuccess();
+    }
+  }, [dispatch, onSuccess, password, username]);
 
   return (
     <DynamicModuleLoader reducers={initialReducers}>

@@ -1,8 +1,8 @@
-import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
+import { memo } from 'react';
 import { Counter } from '../../../entities/Counter';
 
-const MainPage: FC = () => {
+const MainPage = memo(() => {
   const { t } = useTranslation('main');
 
   return (
@@ -11,6 +11,6 @@ const MainPage: FC = () => {
       <Counter />
     </>
   );
-};
+});
 
 export default MainPage;
