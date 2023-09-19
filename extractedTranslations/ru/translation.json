@@ -24,8 +24,14 @@
   "count_1": "count_1",
   "count_2": "count_2",
   "decrement": "decrement",
+  "edit": "edit",
   "errors": {
     "BadEmailOrPassword": "BadEmailOrPassword"
   },
-  "increment": "increment"
+  "increment": "increment",
+  "inputs": {
+    "firstname": "firstname",
+    "lastname": "lastname"
+  },
+  "profile": "profile"
 }

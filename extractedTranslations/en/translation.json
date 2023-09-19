@@ -23,8 +23,14 @@
   "count": "count",
   "count_plural": "count_plural",
   "decrement": "decrement",
+  "edit": "edit",
   "errors": {
     "BadEmailOrPassword": ""
   },
-  "increment": "increment"
+  "increment": "increment",
+  "inputs": {
+    "firstname": "firstname",
+    "lastname": "lastname"
+  },
+  "profile": "profile"
 }
