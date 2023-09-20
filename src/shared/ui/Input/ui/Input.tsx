@@ -7,17 +7,19 @@ import {
   useRef,
   useState,
 } from 'react';
+import { DefaultTFuncReturn } from 'i18next';
 import styles from './styles.module.scss';
 
 type HTMLInputProps = Omit<
   InputHTMLAttributes<HTMLInputElement>,
-  'value' | 'onChange'
+  'value' | 'onChange' | 'placeholder'
 >;
 
 interface InputProps extends HTMLInputProps {
   className?: string;
   value?: string;
   onChange?: (value: string) => void;
+  placeholder?: string | DefaultTFuncReturn;
 }
 
 export const Input = memo(
@@ -26,7 +28,7 @@ export const Input = memo(
     value,
     onChange,
     type = 'text',
-    placeholder,
+    placeholder = '',
     autoFocus,
     ...props
   }: InputProps) => {

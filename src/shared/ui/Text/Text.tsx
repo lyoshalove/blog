@@ -1,5 +1,6 @@
 import { classNames } from 'shared/lib/classNames';
 import { memo } from 'react';
+import { DefaultTFuncReturn } from 'i18next';
 import styles from './styles.module.scss';
 
 export enum TextTheme {
@@ -9,8 +10,8 @@ export enum TextTheme {
 
 interface TextProps {
   className?: string;
-  title?: string;
-  text?: string;
+  title?: string | DefaultTFuncReturn;
+  text?: string | DefaultTFuncReturn;
   theme?: TextTheme;
 }
 
