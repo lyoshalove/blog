@@ -20,6 +20,11 @@
       "placeholder": "placeholder"
     }
   },
+  "common": {
+    "cancel": "cancel",
+    "edit": "edit",
+    "save": "save"
+  },
   "count": "count",
   "count_plural": "count_plural",
   "decrement": "decrement",
@@ -29,8 +34,11 @@
   },
   "increment": "increment",
   "inputs": {
+    "country": "country",
+    "currency": "currency",
     "firstname": "firstname",
     "lastname": "lastname"
   },
-  "profile": "profile"
+  "profile": "profile",
+  "updatePage": "updatePage"
 }

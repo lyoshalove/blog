@@ -1,8 +1,16 @@
 {
-    "profile": "Profile",
-    "edit": "Edit",
-    "inputs": {
-        "firstname": "Your firstname",
-        "lastname": "Your lastname"
-    }
+  "profile": "Profile",
+  "inputs": {
+    "firstname": "Your firstname",
+    "lastname": "Your lastname",
+    "age": "Your age",
+    "city": "Your city",
+    "username": "Your username",
+    "avatar": "Your avatar",
+    "currency": "Select your currency",
+    "country": "Select your country"
+  },
+  "errors": {
+    "loadingError": "An error occurred while loading the profile"
+  }
 }
