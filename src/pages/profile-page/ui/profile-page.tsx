@@ -38,7 +38,7 @@ const ProfilePage = memo(({ className }: ProfilePageProps) => {
   const readOnly = useSelector(getProfileReadonly);
   const validateProfileErrors = useSelector(getProfileValidateErrors);
   const dispatch = useAppDispatch();
-  const { t } = useTranslation();
+  const { t } = useTranslation('profile');
 
   const validateErrorTranslates = {
     [ValidateProfileError.INCORRECT_AGE]: t('errors.serverError'),
@@ -139,8 +139,6 @@ const ProfilePage = memo(({ className }: ProfilePageProps) => {
   useEffect(() => {
     dispatch(fetchProfileData());
   }, [dispatch]);
-
-  console.log(2222, validateProfileErrors);
 
   return (
     <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
