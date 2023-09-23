@@ -30,7 +30,12 @@
   "decrement": "decrement",
   "edit": "edit",
   "errors": {
-    "BadEmailOrPassword": ""
+    "BadEmailOrPassword": "",
+    "incorrectAge": "incorrectAge",
+    "incorrectRegion": "incorrectRegion",
+    "incorrectUserData": "incorrectUserData",
+    "noData": "noData",
+    "serverError": "serverError"
   },
   "increment": "increment",
   "inputs": {

@@ -11,6 +11,11 @@
     "country": "Select your country"
   },
   "errors": {
-    "loadingError": "An error occurred while loading the profile"
+    "loadingError": "An error occurred while loading the profile",
+    "serverError": "Server error while saving data",
+    "incorrectRegion": "Incorrect region",
+    "noData": "No data",
+    "incorrectUserData": "Firstname and lastname is required",
+    "incorrectAge": "Incorrect age"
   }
 }
