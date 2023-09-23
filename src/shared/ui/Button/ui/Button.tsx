@@ -8,6 +8,7 @@ export enum ButtonTheme {
   OUTLINE = 'outline',
   BACKGROUND = 'background',
   BACKGROUND_INVERTED = 'backgroundInverted',
+  OUTLINE_RED = 'outlineRed',
 }
 
 export enum ButtonSize {
@@ -27,13 +28,13 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 export const Button = memo(({
   className,
   children,
-  theme,
+  theme = ButtonTheme.OUTLINE,
   square = false,
   size = ButtonSize.M,
   disabled,
   ...props
 }: ButtonProps) => {
-  const mods: Record<string, boolean> = {
+  const mods = {
     [styles.square]: square,
     [styles.disabled]: disabled,
   };

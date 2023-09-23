@@ -20,11 +20,30 @@
       "placeholder": "placeholder"
     }
   },
+  "common": {
+    "cancel": "cancel",
+    "edit": "edit",
+    "save": "save"
+  },
   "count": "count",
   "count_plural": "count_plural",
   "decrement": "decrement",
+  "edit": "edit",
   "errors": {
-    "BadEmailOrPassword": ""
+    "BadEmailOrPassword": "",
+    "incorrectAge": "incorrectAge",
+    "incorrectRegion": "incorrectRegion",
+    "incorrectUserData": "incorrectUserData",
+    "noData": "noData",
+    "serverError": "serverError"
   },
-  "increment": "increment"
+  "increment": "increment",
+  "inputs": {
+    "country": "country",
+    "currency": "currency",
+    "firstname": "firstname",
+    "lastname": "lastname"
+  },
+  "profile": "profile",
+  "updatePage": "updatePage"
 }

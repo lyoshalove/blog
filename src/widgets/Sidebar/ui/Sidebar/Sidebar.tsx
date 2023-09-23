@@ -32,7 +32,13 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
     >
       <div className={styles.links}>
         {SidebarItemsList.map((sidebarItem) => {
-          return <SidebarItem key={sidebarItem.path} item={sidebarItem} opened={isOpened} />;
+          return (
+            <SidebarItem
+              key={sidebarItem.path}
+              item={sidebarItem}
+              opened={isOpened}
+            />
+          );
         })}
       </div>
       <Button

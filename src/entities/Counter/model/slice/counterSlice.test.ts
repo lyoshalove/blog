@@ -7,7 +7,7 @@ describe('counterSlice', () => {
       value: 10,
     };
 
-    expect(counterReducer(state, counterActions.increment)).toEqual({
+    expect(counterReducer(state, counterActions.increment())).toEqual({
       value: 11,
     });
   });

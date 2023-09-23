@@ -25,5 +25,11 @@
   "Logout": "Logout",
   "errors": {
     "BadEmailOrPassword": "You send wrong email and/or password"
+  },
+  "updatePage": "Try to reload page",
+  "common": {
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "save": "Save"
   }
 }
