@@ -114,7 +114,6 @@ export const ProfileCard = ({
         />
         <Input
           value={profileData?.username}
-          type="number"
           placeholder={tProfile('inputs.username')}
           onChange={onChangeUsername}
           readOnly={readOnly}
