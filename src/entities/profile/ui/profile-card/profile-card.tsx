@@ -5,8 +5,8 @@ import { Input } from 'shared/ui/Input';
 import { Loader } from 'shared/ui/Loader';
 import { TextAlign, TextTheme } from 'shared/ui/Text/Text';
 import { Avatar } from 'shared/ui/avatar';
-import { Currency, CurrencySelect } from 'entities/currency';
-import { Country, CountrySelect } from 'entities/country';
+import { Country, CountrySelect } from '../../../../entities/country';
+import { Currency, CurrencySelect } from '../../../../entities/currency';
 import { Profile } from '../../../../entities/profile/model/types';
 import styles from './styles.module.scss';
 

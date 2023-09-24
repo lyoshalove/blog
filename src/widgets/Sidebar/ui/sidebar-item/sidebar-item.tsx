@@ -4,7 +4,7 @@ import { classNames } from 'shared/lib/classNames';
 import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
 import { useSelector } from 'react-redux';
-import { getUserAuthData } from 'entities/User';
+import { getUserAuthData } from '../../../../entities/User';
 import styles from './styles.module.scss';
 
 interface SidebarItemProps {

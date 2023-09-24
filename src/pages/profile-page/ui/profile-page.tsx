@@ -9,7 +9,7 @@ import { Country } from 'entities/country';
 import { Text } from 'shared/ui/Text';
 import { TextTheme } from 'shared/ui/Text/Text';
 import { useTranslation } from 'react-i18next';
-import { ValidateProfileError } from 'entities/profile/model/types';
+import { ValidateProfileError } from '../../../entities/profile/model/types';
 import {
   getProfileError,
   getProfileForm,
