@@ -32,7 +32,8 @@ export default ({ config }: { config: Configuration }) => {
 
   config.plugins?.push(new DefinePlugin({
     __IS_DEV__: true,
-    __API__: '',
+    __API__: JSON.stringify(''),
+    __PROJECT__: 'storybook',
   }));
 
   return config;
