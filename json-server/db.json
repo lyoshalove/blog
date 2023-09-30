@@ -3,12 +3,14 @@
     {
       "id": "1",
       "username": "Alex",
-      "password": "snussnus"
+      "password": "snussnus",
+      "role": "USER"
     },
     {
       "id": "2",
       "username": "admin",
-      "password": "123"
+      "password": "123",
+      "role": "ADMIN"
     }
   ],
   "profile": {
@@ -20,5 +22,63 @@
     "city": "Moscow",
     "username": "admin",
     "avatar": "https://media.discordapp.net/attachments/1123128165146042369/1149617910248132618/d3CHSe-sKbI.png?width=748&height=936"
-  }
+  },
+  "articles": [
+    {
+      "id": "0",
+      "title": "JavaScript article",
+      "subtitle": "Че нового в джсе в 2023 году?",
+      "img": "https://avatars.dzeninfra.ru/get-zen_doc/168279/pub_63a58cd79dfd0d313ed59008_63a58f2bc8037c4b0e5c3312/scale_1200",
+      "views": 666,
+      "createdAt": "21.04.2021",
+      "type": ["IT"],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Заголовок блока",
+          "paragraphs": [
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Инструменты разработчика, и, в том числе, консоль, имеются и в других браузерах. Консоль хороша тем, что она, когда вы пользуетесь браузером, всегда под рукой."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "CODE",
+          "code": "<!DOCTYPE html><html>  \n<body>    \n<p id=\"hello\"></p>\n    \n<script>      \ndocument.getElementById(\"hello\").innerHTML = \"Hello, world!\";   \n</script>\n </body>\n</html>"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "console.log('Hello, World!');"
+        },
+        {
+          "id": "4",
+          "type": "IMAGE",
+          "src": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg",
+          "title": "Рисунок 1 - счастливый человек, который пишет на JS"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "круто!!!",
+      "articleId": "0",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "text": "классно!!!",
+      "articleId": "0",
+      "userId": "1"
+    },
+    {
+      "id": "3",
+      "text": "какашка!!!",
+      "articleId": "0",
+      "userId": "1"
+    }
+  ]
 }

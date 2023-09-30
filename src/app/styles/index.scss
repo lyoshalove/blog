@@ -19,6 +19,9 @@ body {
 }
 
 .page {
-  padding: 20px;
+  padding: 30px 40px;
   flex-grow: 1;
+  height: calc(100vh - 50px);
+  overflow: hidden;
+  overflow-y: auto;
 }
