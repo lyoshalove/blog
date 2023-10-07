@@ -4,9 +4,13 @@ import { ReducersList } from 'shared/lib/components/dynamic-module-loader';
 import { useAppDispatch } from 'shared/lib/hooks';
 import { memo, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { Text } from 'shared/ui/Text';
-import { TextAlign, TextTheme } from 'shared/ui/Text/Text';
+import {
+  Text, TextAlign, TextSizes, TextTheme,
+} from 'shared/ui/Text';
 import { Skeleton } from 'shared/ui/skeleton';
+import { Avatar } from 'shared/ui/avatar';
+import EyeIcon from 'shared/assets/icons/eye.svg';
+import CalendarIcon from 'shared/assets/icons/calendar.svg';
 import {
   fetchArticleById, getArticleDetailsData, getArticleDetailsError, getArticleDetailsIsLoading,
 } from '../../../../entities/article';
@@ -35,13 +39,13 @@ export const ArticleDetails = memo(({ articleId, className }: ArticleDetailsProp
 
   if (isLoading) {
     content = (
-      <div>
+      <>
         <Skeleton className={styles.avatar} width={200} height={200} border="50%" />
         <Skeleton className={styles.title} width={300} height={32} />
         <Skeleton className={styles.skeleton} width={600} height={24} />
         <Skeleton className={styles.skeleton} width="100%" height={200} />
         <Skeleton className={styles.skeleton} width="100%" height={200} />
-      </div>
+      </>
     );
   }
 
@@ -56,7 +60,27 @@ export const ArticleDetails = memo(({ articleId, className }: ArticleDetailsProp
   }
 
   if (article) {
-    content = <h1>Article Details</h1>;
+    content = (
+      <>
+        <div className={styles.avatarWrapper}>
+          <Avatar avatarUrl={article.img} size={200} className={styles.avatar} />
+        </div>
+        <Text
+          title={article.title}
+          text={article.subtitle}
+          className={styles.title}
+          size={TextSizes.L}
+        />
+        <div className={styles.articleInfo}>
+          <EyeIcon />
+          <Text text={String(article.views)} />
+        </div>
+        <div className={styles.articleInfo}>
+          <CalendarIcon />
+          <Text text={article.createdAt} />
+        </div>
+      </>
+    );
   }
 
   return (
