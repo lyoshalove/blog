@@ -8,5 +8,5 @@ interface IconProps {
 }
 
 export const Icon = ({ Svg, clasName }: IconProps) => {
-  return <div className={classNames(styles.icon, {}, [clasName])} />;
+  return <Svg className={classNames(styles.icon, {}, [clasName])} />;
 };

@@ -9,18 +9,18 @@ interface ArticleBlockBase {
   type: ArticleBlockType;
 }
 
-interface ArticleBlockText extends ArticleBlockBase {
+export interface ArticleBlockText extends ArticleBlockBase {
   type: ArticleBlockType.TEXT;
   title?: string;
   paragraphs: string[];
 }
 
-interface ArticleBlockCode extends ArticleBlockBase {
+export interface ArticleBlockCode extends ArticleBlockBase {
   type: ArticleBlockType.CODE;
   code: string;
 }
 
-interface ArticleBlockImage extends ArticleBlockBase {
+export interface ArticleBlockImage extends ArticleBlockBase {
   type: ArticleBlockType.IMAGE;
   src: string;
   title: string;

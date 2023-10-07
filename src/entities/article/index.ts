@@ -1,4 +1,4 @@
-export type {
+export {
   ArticleBlockType, ArticleBlock, ArticleTypes, Article, ArticleDetailsSchema,
 } from './model/types';
 export { ArticleDetails } from './ui';
