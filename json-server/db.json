@@ -4,13 +4,15 @@
       "id": "1",
       "username": "Alex",
       "password": "snussnus",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "https://avatars.dzeninfra.ru/get-zen_doc/168279/pub_63a58cd79dfd0d313ed59008_63a58f2bc8037c4b0e5c3312/scale_1200"
     },
     {
       "id": "2",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://avatars.dzeninfra.ru/get-zen_doc/168279/pub_63a58cd79dfd0d313ed59008_63a58f2bc8037c4b0e5c3312/scale_1200"
     }
   ],
   "profile": {
@@ -21,7 +23,7 @@
     "country": "Russia",
     "city": "Moscow",
     "username": "admin",
-    "avatar": "https://media.discordapp.net/attachments/1123128165146042369/1149617910248132618/d3CHSe-sKbI.png?width=748&height=936"
+    "avatar": "https://avatars.dzeninfra.ru/get-zen_doc/168279/pub_63a58cd79dfd0d313ed59008_63a58f2bc8037c4b0e5c3312/scale_1200"
   },
   "articles": [
     {

@@ -20,6 +20,8 @@
       "placeholder": "placeholder"
     }
   },
+  "comments": "comments",
+  "commentsNotFound": "commentsNotFound",
   "common": {
     "cancel": "cancel",
     "edit": "edit",

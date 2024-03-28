@@ -31,5 +31,7 @@
     "edit": "Edit",
     "cancel": "Cancel",
     "save": "Save"
-  }
+  },
+  "comments": "Comments",
+  "commentsNotFound": "Comments not found"
 }

@@ -4,6 +4,7 @@ import {
 } from '@reduxjs/toolkit';
 import { AxiosInstance } from 'axios';
 import { NavigateOptions, To } from 'react-router-dom';
+import { ArticleDetailsCommentSchema } from 'pages/article-details-page/ui';
 import { ArticleDetailsSchema } from '../../../../entities/article';
 import { ProfileSchema } from '../../../../entities/profile';
 import { UserSchema } from '../../../../entities/User';
@@ -17,6 +18,7 @@ export interface StateSchema {
   login?: LoginSchema;
   profile?: ProfileSchema;
   articleDetails?: ArticleDetailsSchema;
+  articleDetailsComments?: ArticleDetailsCommentSchema;
 }
 
 export type StateSchemaKey = keyof StateSchema;
