@@ -11,6 +11,7 @@ jest.mock('axios');
 const mockedAxios = jest.mocked(axios);
 
 export const profileData = {
+  id: '1',
   firstname: 'Alex',
   lastname: 'Snus',
   age: 22,

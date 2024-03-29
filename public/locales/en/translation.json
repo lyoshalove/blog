@@ -30,8 +30,10 @@
   "common": {
     "edit": "Edit",
     "cancel": "Cancel",
-    "save": "Save"
+    "save": "Save",
+    "send": "Send"
   },
   "comments": "Comments",
-  "commentsNotFound": "Comments not found"
+  "commentsNotFound": "Comments not found",
+  "writeComment": "Write comment"
 }

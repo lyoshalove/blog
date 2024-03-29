@@ -9,6 +9,7 @@ import { Country } from 'entities/country';
 import { Text } from 'shared/ui/Text';
 import { TextTheme } from 'shared/ui/Text/Text';
 import { useTranslation } from 'react-i18next';
+import { useParams } from 'react-router-dom';
 import { ValidateProfileError } from '../../../entities/profile/model/types';
 import {
   getProfileError,
@@ -39,6 +40,7 @@ const ProfilePage = memo(({ className }: ProfilePageProps) => {
   const validateProfileErrors = useSelector(getProfileValidateErrors);
   const dispatch = useAppDispatch();
   const { t } = useTranslation('profile');
+  const { id: profileId } = useParams<{id: string}>();
 
   const validateErrorTranslates = {
     [ValidateProfileError.INCORRECT_AGE]: t('errors.serverError'),
@@ -137,11 +139,13 @@ const ProfilePage = memo(({ className }: ProfilePageProps) => {
   );
 
   useInitialEffect(() => {
-    dispatch(fetchProfileData());
+    if (profileId) {
+      dispatch(fetchProfileData(profileId));
+    }
   });
 
   return (
-    <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
+    <DynamicModuleLoader reducers={reducers}>
       <div className={classNames(className)}>
         <ProfilePageHeader />
         {validateProfileErrors?.map((error) => {

@@ -5,7 +5,10 @@ import { Text } from 'shared/ui/Text';
 import { useSelector } from 'react-redux';
 import { useAppDispatch } from 'shared/lib/hooks';
 import { useCallback } from 'react';
-import { getProfileReadonly, profileActions, updateProfileData } from '../../../../entities/profile';
+import { getUserAuthData } from 'entities/User';
+import {
+  getProfileData, getProfileReadonly, profileActions, updateProfileData,
+} from '../../../../entities/profile';
 import styles from './styles.module.scss';
 
 interface ProfilePageHeaderProps {
@@ -16,6 +19,9 @@ export const ProfilePageHeader = ({ className }: ProfilePageHeaderProps) => {
   const { t: tProfile } = useTranslation('profile');
   const { t } = useTranslation();
   const isReadOnly = useSelector(getProfileReadonly);
+  const userData = useSelector(getUserAuthData);
+  const profileData = useSelector(getProfileData);
+  const canEdit = userData?.id === profileData?.id;
   const dispatch = useAppDispatch();
 
   const onEdit = useCallback(() => {
@@ -34,26 +40,28 @@ export const ProfilePageHeader = ({ className }: ProfilePageHeaderProps) => {
   return (
     <div className={classNames(className, {}, [styles.header])}>
       <Text title={tProfile('profile')} />
-      <div className={styles.buttons}>
-        {isReadOnly ? (
-          <Button
-            theme={ButtonTheme.OUTLINE}
-            className={styles.editBtn}
-            onClick={onEdit}
-          >
-            {t('common.edit')}
-          </Button>
-        ) : (
-          <>
-            <Button theme={ButtonTheme.OUTLINE_RED} onClick={onCancelEdit}>
-              {t('common.cancel')}
+      {canEdit && (
+        <div className={styles.buttons}>
+          {isReadOnly ? (
+            <Button
+              theme={ButtonTheme.OUTLINE}
+              className={styles.editBtn}
+              onClick={onEdit}
+            >
+              {t('common.edit')}
             </Button>
-            <Button theme={ButtonTheme.OUTLINE} onClick={onSave}>
-              {t('common.save')}
-            </Button>
-          </>
-        )}
-      </div>
+          ) : (
+            <>
+              <Button theme={ButtonTheme.OUTLINE_RED} onClick={onCancelEdit}>
+                {t('common.cancel')}
+              </Button>
+              <Button theme={ButtonTheme.OUTLINE} onClick={onSave}>
+                {t('common.save')}
+              </Button>
+            </>
+          )}
+        </div>
+      )}
     </div>
   );
 };

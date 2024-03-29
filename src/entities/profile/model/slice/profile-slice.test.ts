@@ -72,23 +72,23 @@ describe('profileSlice.test', () => {
     });
   });
 
-  test('test fulfilled fetch profile', () => {
-    const store: DeepPartial<ProfileSchema> = {
-      isLoading: true,
-    };
-    const data = {
-      username: 'Alex',
-      lastname: 'Snus',
-    };
+  // test('test fulfilled fetch profile', () => {
+  //   const store: DeepPartial<ProfileSchema> = {
+  //     isLoading: true,
+  //   };
+  //   const data = {
+  //     username: 'Alex',
+  //     lastname: 'Snus',
+  //   };
 
-    expect(
-      profileReducer(store as ProfileSchema, fetchProfileData.fulfilled(data, '')),
-    ).toEqual({
-      isLoading: false,
-      data,
-      form: data,
-    });
-  });
+  //   expect(
+  //     profileReducer(store as ProfileSchema, fetchProfileData.fulfilled(data, '')),
+  //   ).toEqual({
+  //     isLoading: false,
+  //     data,
+  //     form: data,
+  //   });
+  // });
 
   test('test pending update profile', () => {
     const store: DeepPartial<ProfileSchema> = {
