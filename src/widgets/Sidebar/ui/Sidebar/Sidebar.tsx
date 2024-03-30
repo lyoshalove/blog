@@ -4,7 +4,8 @@ import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
 import { LangSwitcher } from 'widgets/LangSwitcher';
 import { Button, ButtonTheme } from 'shared/ui/Button';
 import { ButtonSize } from 'shared/ui/Button/ui/Button';
-import { SidebarItemsList } from 'widgets/Sidebar/model/items';
+import { useSelector } from 'react-redux';
+import { getSidebarItems } from '../../model/selectors/get-sidebar-items';
 import styles from './Sidebar.module.scss';
 import { SidebarItem } from '../sidebar-item/sidebar-item';
 
@@ -13,6 +14,7 @@ interface SidebarProps {
 }
 
 export const Sidebar = memo(({ className }: SidebarProps) => {
+  const sidebarItemsList = useSelector(getSidebarItems);
   const [isOpened, setIsOpened] = useState(false);
 
   const toggleOpenSidebar = () => {
@@ -31,7 +33,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
       )}
     >
       <div className={styles.links}>
-        {SidebarItemsList.map((sidebarItem) => {
+        {sidebarItemsList.map((sidebarItem) => {
           return (
             <SidebarItem
               key={sidebarItem.path}
