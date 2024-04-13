@@ -1,50 +1,36 @@
 {
-  "posts": [
-    {
-      "id": "1",
-      "title": "json-server",
-      "userId": "1"
-    },
-    {
-      "id": "2",
-      "title": "json-server",
-      "userId": "2"
-    }
-  ],
   "notifications": [
     {
       "id": "1",
       "title": "Уведомление 1",
-      "description": "Описание первого уведомления",
+      "description": "Произошло какое-то событие",
       "userId": "1"
     },
     {
       "id": "2",
       "title": "Уведомление 2",
-      "description": "Какое-то описание",
-      "userId": "2",
-      "href": "https://headlessui.com/react/popover"
+      "description": "Произошло какое-то событие",
+      "userId": "1",
+      "href": "http://localhost:3000/admin"
     },
     {
       "id": "3",
       "title": "Уведомление 3",
-      "description": "Описание второго уведомления",
+      "description": "Произошло какое-то событие",
       "userId": "1",
-      "href": "https://headlessui.com/react/switch"
+      "href": "http://localhost:3000/admin"
     },
     {
       "id": "4",
       "title": "Уведомление 4",
-      "description": "Какое-то описание четвертого уведомления",
-      "userId": "2",
-      "href": "https://headlessui.com/react/popover"
+      "description": "Произошло какое-то событие",
+      "userId": "1"
     },
     {
       "id": "5",
-      "title": "Уведомление 5",
-      "description": "Описание пятого уведомления",
-      "userId": "1",
-      "href": "https://headlessui.com/react/switch"
+      "title": "Уведомление 1",
+      "description": "Произошло какое-то событие",
+      "userId": "2"
     }
   ],
   "articles": [
@@ -124,7 +110,7 @@
       "id": "2",
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg",
+      "img": "https://zsfond.ru/wp-content/uploads/2021/03/piton-1-1024x578.jpg",
       "views": 5204,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -148,7 +134,7 @@
       "id": "3",
       "title": "Kotlin news 2019",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg",
+      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
       "views": 94002,
       "createdAt": "26.02.2019",
       "userId": "1",
@@ -172,7 +158,7 @@
       "id": "4",
       "title": "Scala news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg",
+      "img": "https://coursefreedl.com/wp-content/uploads/2020/01/Scala-Zero-To-Hero-Complete-Guide.jpg",
       "views": 10222,
       "createdAt": "24.01.2022",
       "userId": "1",
@@ -196,7 +182,7 @@
       "id": "5",
       "title": "Golang news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg",
+      "img": "https://cdn-front.kwork.ru/pics/t3/88/16350941-1630390388.jpg",
       "views": 10222,
       "createdAt": "26.02.2020",
       "userId": "1",
@@ -268,7 +254,7 @@
       "id": "8",
       "title": "TypeScript news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg",
+      "img": "https://miro.medium.com/max/1400/1*aTCN2ctKNoZupUCMP0hQuw.png",
       "views": 102222,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -292,7 +278,7 @@
       "id": "9",
       "title": "Kotlin news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg",
+      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -316,7 +302,7 @@
       "id": "10",
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg",
+      "img": "https://zsfond.ru/wp-content/uploads/2021/03/piton-1-1024x578.jpg",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -340,7 +326,7 @@
       "id": "11",
       "title": "Kotlin news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg",
+      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -364,7 +350,7 @@
       "id": "12",
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg",
+      "img": "https://zsfond.ru/wp-content/uploads/2021/03/piton-1-1024x578.jpg",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -388,7 +374,7 @@
       "id": "13",
       "title": "Kotlin news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg",
+      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -412,7 +398,7 @@
       "id": "14",
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg",
+      "img": "https://zsfond.ru/wp-content/uploads/2021/03/piton-1-1024x578.jpg",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -436,7 +422,7 @@
       "id": "15",
       "title": "Kotlin news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg",
+      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -460,7 +446,7 @@
       "id": "16",
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg",
+      "img": "https://zsfond.ru/wp-content/uploads/2021/03/piton-1-1024x578.jpg",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -484,7 +470,7 @@
       "id": "17",
       "title": "Kotlin news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg",
+      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -532,7 +518,7 @@
       "id": "18",
       "title": "Научная статья - Биология",
       "subtitle": "БиологиЯ",
-      "img": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg",
+      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -719,7 +705,7 @@
       "roles": [
         "ADMIN"
       ],
-      "avatar": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg"
+      "avatar": "https://yakutsk.ru/wp-content/uploads/2022/07/12/bystrov_haker.jpeg"
     },
     {
       "id": "2",
@@ -750,7 +736,7 @@
       "country": "Belarus",
       "city": "Moscow",
       "username": "admin213",
-      "avatar": "https://i.ytimg.com/vi/8By5xEXkZQk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgTyhHMA8=&amp;rs=AOn4CLACJlKGja8-IWEpZpNzpdIXXcx7Tg"
+      "avatar": "https://yt3.ggpht.com/ytc/AKedOLTYUJxG8Hu036PQ_TXpMLq2fG8Kj8NZI4h0lbn_3g=s900-c-k-c0x00ffffff-no-rj"
     },
     {
       "id": "2",
@@ -762,6 +748,66 @@
       "city": "Moscow",
       "username": "ulbi tv",
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+    }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "2"
+    },
+    {
+      "userId": "1",
+      "articleId": "3",
+      "rate": 3,
+      "feedback": "",
+      "id": "I7ofk1u"
+    },
+    {
+      "userId": "1",
+      "articleId": "9",
+      "rate": 5,
+      "feedback": "asdasdasdasd",
+      "id": "Y7MhPzo"
+    },
+    {
+      "userId": "1",
+      "articleId": "10",
+      "rate": 1,
+      "feedback": "отстой",
+      "id": "II0a75O"
+    },
+    {
+      "userId": "1",
+      "articleId": "7",
+      "rate": 3,
+      "feedback": "",
+      "id": "bcPnbbZ"
+    }
+  ],
+  "profile-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "profileId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "profileId": "2"
     }
   ]
 }

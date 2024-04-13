@@ -1,35 +1,34 @@
 import { memo } from 'react';
-import { classNames } from 'shared/lib/classNames/classNames';
-import { Card, CardTheme } from 'shared/ui/Card/Card';
-import { Text } from 'shared/ui/Text/Text';
-import { Notification } from 'entities/Notification/model';
-import cls from './styles.module.scss';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { Card, CardTheme } from '@/shared/ui/Card';
+import { Text } from '@/shared/ui/Text';
+import cls from './NotificationItem.module.scss';
+import { Notification } from '../../model/types/notification';
 
 interface NotificationItemProps {
-  className?: string;
-  item: Notification;
+    className?: string;
+    item: Notification
 }
 
-export const NotificationItem = memo(({
-  className,
-  item,
-}: NotificationItemProps) => {
-  const content = (
-    <Card
-      className={classNames(cls.NotificationItem, {}, [className])}
-      theme={CardTheme.OUTLINED}
-    >
-      <Text title={item.title} text={item.description} />
-    </Card>
-  );
+export const NotificationItem = memo((props: NotificationItemProps) => {
+    const { className, item } = props;
 
-  if (item.href) {
-    return (
-      <a className={cls.link} href={item.href} target="_blank" rel="noreferrer">
-        {content}
-      </a>
+    const content = (
+        <Card
+            theme={CardTheme.OUTLINED}
+            className={classNames(cls.NotificationItem, {}, [className])}
+        >
+            <Text title={item.title} text={item.description} />
+        </Card>
     );
-  }
 
-  return content;
+    if (item.href) {
+        return (
+            <a className={cls.link} target="_blank" href={item.href} rel="noreferrer">
+                {content}
+            </a>
+        );
+    }
+
+    return content;
 });

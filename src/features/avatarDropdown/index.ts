@@ -1,1 +1,1 @@
-export { AvatarDropdown } from './AvatarDropdown/AvatarDropdown';
+export { AvatarDropdown } from './ui/AvatarDropdown/AvatarDropdown';
