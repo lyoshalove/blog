@@ -1,1 +1,0 @@
-export {getByTestId} from './getByTestId'
